@@ -10,8 +10,9 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+using System.Xml.Linq;
+//using Newtonsoft.Json;
+//using Newtonsoft.Json.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
@@ -46,10 +47,18 @@ namespace TheaterEditor
 
         private void profileInformationForm_Load(object sender, EventArgs e)
         {
-            textBox2.Text = ProfileJsonData.accountId;
 
 
+            profileIdLabel.Text = ProfileJsonData?.profileId;
+            accountIdTextBox.Text = ProfileJsonData?.accountId;
 
+        }
+
+
+        private void LoadProfileData()
+        {
+
+            
         }
 
         
@@ -75,6 +84,44 @@ namespace TheaterEditor
         public Form1.Profile ProfileAttributes { get; }
 
         public Form1.Profile profileData { get; }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (ProfileJsonData == null)
+            {
+                MessageBox.Show("Data is unable to be saved.");
+                return;
+            }
+
+            //ProfileJsonData.profileId = profileIdLabel.Text;
+            ProfileJsonData.accountId = accountIdTextBox.Text;
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "JSON Files (*.json)|*.json|All Files (*.*)|*.*",
+                Title = "Save JSON File"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = saveFileDialog.FileName;
+
+                // Set up the JsonSerializerOptions for indentation
+                var options = new JsonSerializerOptions
+                {
+                    WriteIndented = true
+                };
+
+                // Serialize the MyData object to JSON
+                string jsonData = JsonSerializer.Serialize(ProfileJsonData);
+
+                // Write the JSON data to the file
+                File.WriteAllText(filePath, jsonData);
+
+                MessageBox.Show("File saved successfully.");
+            }
+        }
     }
 
 
