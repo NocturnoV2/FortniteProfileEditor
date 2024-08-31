@@ -36,15 +36,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(225, 190);
+            this.button1.Location = new System.Drawing.Point(164, 144);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 32);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Load Theater File";
+            this.button1.Text = "Load Profile";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -56,11 +57,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(222, 24);
+            this.label1.Location = new System.Drawing.Point(285, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 13);
+            this.label1.Size = new System.Drawing.Size(199, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Welcome to a Visual Editor meant to visually edit theater files for STW";
+            this.label1.Text = "Welcome to a GUI Profile/Theater Editor";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -87,28 +88,36 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(178, 108);
+            this.label4.Location = new System.Drawing.Point(250, 111);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(396, 13);
+            this.label4.Size = new System.Drawing.Size(221, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "To get started, click this file to load your worldstw.json file that you have acc" +
-    "ess to!";
+            this.label4.Text = "To get started, click load to load a profile json";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(415, 190);
+            this.button2.Location = new System.Drawing.Point(421, 144);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(105, 32);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Save Theater File";
+            this.button2.Text = "Save Profile";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(124, 182);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(473, 267);
+            this.richTextBox1.TabIndex = 8;
+            this.richTextBox1.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -131,6 +140,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
