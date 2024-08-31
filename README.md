@@ -1,6 +1,6 @@
 # Fortnite Profile Editor
 
-With this tool, you can easily edit any profile you want and view information which is contained in your profile.
+With this tool, you can easily edit any profile you want and view information which is contained in your profile. Brought to you by the Team behind Project Nocturno!
 
 ## Planned Features:
   * Load and save profiles such as profile0, campaign, athena, metadata, theater0, etc.
