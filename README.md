@@ -1,5 +1,12 @@
-# TheaterEditor
+# Fortnite Profile Editor
 
-This is WIP. Essentially a Visual Editor to Modify Theater files without the hassle of trying to figure out what something is.
+With this tool, you can easily edit any profile you want and view information which is contained in your profile.
 
-## AS OF NOW, THERE IS NO FUNCTIONALITY. THIS IS A SIDE-PROJECT TO CREATE A TOOL MEANT TO HELP WITH NOCTURNO'S DEVELOPMENT. IT WILL BE PUBLICLY RELEASED UNDER A LICENSE FOR ANYONE TO USE HOWEVER!!
+## Planned Features:
+  * Load and save profiles such as profile0, campaign, athena, metadata, theater0, etc.
+  * Add Tabs for Outfits in a profile (profile0, athena) and Heroes (profile0, campaign)
+  * Add the ability to add an ID to any profile and add any desired attributes to it.
+  * Edit a Theater file from STW (change zone name, power level, missions, hex coordinates, etc)
+  * having an easy to navigate GUI.
+
+## AS OF NOW, THERE IS LITTLE TO NO FUNCTIONALITY. If you would like to contribute, feel free to make a pull request!
