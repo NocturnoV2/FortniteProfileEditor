@@ -9,4 +9,4 @@ With this tool, you can easily edit any profile you want and view information wh
   * Edit a Theater file from STW (change zone name, power level, missions, hex coordinates, etc)
   * having an easy to navigate GUI.
 
-## AS OF NOW, THERE IS LITTLE TO NO FUNCTIONALITY. If you would like to contribute, feel free to make a pull request!
+## AS OF NOW, THERE IS LITTLE TO NO FUNCTIONALITY. The GUI is also very barebones as of now but that will change in the future. If you would like to contribute, feel free to make a pull request!
